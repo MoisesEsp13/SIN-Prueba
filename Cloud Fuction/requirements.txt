@@ -1,0 +1,10 @@
+pandas==1.5.3
+numpy==1.23.5
+openpyxl==3.1.2
+xlrd==1.2.0
+google-cloud-storage
+google-cloud-bigquery
+functions-framework
+cloudevents
+pyarrow
+google-cloud-dataproc>=5.0.0
