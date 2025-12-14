@@ -24,7 +24,7 @@ dataset_plata = "plata"
 dataset_oro = "oro"
 table_plata = "sbs_liquidez"
 table_oro = "hecho_riesgo"
-minutos = 10
+# minutos = 10
 
 
 bq_client = bigquery.Client(project=project_id)
@@ -57,9 +57,9 @@ df_liquidez = (
     .option("table", f"{project_id}.bronce.sbs_liquidez")
     .load()
 )
-df_liquidez = df_liquidez.filter(
-    F.col("fecha_carga") >= F.current_timestamp() - F.expr(f"INTERVAL {minutos} MINUTE")
-)
+# df_liquidez = df_liquidez.filter(
+#     F.col("fecha_carga") >= F.current_timestamp() - F.expr(f"INTERVAL {minutos} MINUTE")
+# )
 
 
 print("Columnas originales df_liquidez:", df_liquidez.columns)

@@ -3,7 +3,7 @@
 # -------------------------
 
 # Proyecto 
-PROJECT_ID = "grupo6-scotiabank"
+PROJECT_ID = "prueba1moi"
 
 # Bucket principal
 BUCKET_MONITOREADO = "grupo6_scotiabank_bucket3"
@@ -28,7 +28,6 @@ DATASET_PLATA = "plata"
 DATASET_ORO = "oro"
 TABLE_RATIO = "sbs_liquidez"
 TABLE_ORO = "hecho_riesgo"
-TABLE_DEPOSITO = "sbs_deposito"
 
 
 

@@ -7,7 +7,6 @@ from google.cloud.dataproc_v1.types import Batch, PySparkBatch, RuntimeConfig
 from google.cloud.exceptions import NotFound
 from cloudevents.http import CloudEvent
 from functions_framework import cloud_event
-from utils.bigquery import cargar_dataframe_bigquery
 from config.paths import (
     PROJECT_ID,
     DATASET_BRONCE,
