@@ -1,0 +1,35 @@
+APIS QUE TIENES QUE ACTIVAR
+
+Nombre	Solicitudes	Errores (%)	Latencia mediana (ms)	95% de latencia (ms)
+Compute Engine API	520	0	102	353	
+Cloud Dataproc API	266	2	55	245	
+Cloud Functions API	138	0	22	453	
+Cloud Logging API	135	0	89	129	
+Cloud Run Admin API	75	0	47	141	
+Cloud Pub/Sub API	39	23	216	493	
+Eventarc API	33	3	296	501	
+Cloud Dataproc Control API	23	0	49	121	
+Artifact Registry API	17	0	51	112	
+BigQuery Storage API	16	0	262	943	
+BigQuery API	14	64	98	1,363	
+Cloud Build API	10	0	60	1,922	
+Identity and Access Management (IAM) API	6	0	45	63	
+Cloud Storage API	5	0	305	502	
+Cloud Monitoring API	2	100	32	62
+
+
+
+
+SI QUIERES EJECUTAR UN SOLO JOB PERO NO SE VA USAR
+gcloud dataproc batches submit pyspark gs://grupo6_scotiabank_bucket3/resources/crear_capa_oro.py --project=prueba1moi --region=southamerica-west1 --batch=create-oro-tables --version=2.1 --jars=gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar --properties=spark.executor.instances=2,spark.executor.cores=4,spark.executor.memory=4g,spark.driver.cores=4,spark.driver.memory=4g
+
+
+sUBIR TU SERVICIO EN CLOUD RUN
+gcloud functions deploy bronce-dispatcher --gen2 --runtime python310 --region southamerica-west1 --source=. --entry-point bronce_dispatcher --trigger-bucket grupo6_scotiabank_bucket3 --memory 512MB
+
+
+
+
+
+
+
