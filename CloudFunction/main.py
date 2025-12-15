@@ -17,7 +17,7 @@ def bronce_dispatcher(event: CloudEvent):
         return
 
     # Dispatcher por carpeta
-    if name.startswith(paths.PREFIX_RATIO_LIQUIDEZ):
+    if name.startswith(paths.ROOT_RAW):
         run_pipeline_ratio_liquidez(bucket, name)
         return
     

@@ -10,7 +10,8 @@ from functions_framework import cloud_event
 from config.paths import (
     PROJECT_ID,
     DATASET_BRONCE,
-    TABLE_RATIO
+    TABLE_RATIO,
+    BUCKET_MONITOREADO
 )
 
 
@@ -18,7 +19,7 @@ from config.paths import (
 # CONFIG PARA EL JOB
 # --------------------------------------------------------
 REGION = "southamerica-west1"
-BUCKET_SCRIPT = "gs://grupo6_scotiabank_bucket3/resources/jb_ratio_liquidez.py"
+BUCKET_SCRIPT = f"gs://{BUCKET_MONITOREADO}/resources/jb_ratio_liquidez.py"
 BATCH_NAME = "jb-ratio-liquidez"
 timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
 BATCH_NAME = f"{BATCH_NAME}-{timestamp}"

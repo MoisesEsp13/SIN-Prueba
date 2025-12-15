@@ -3,22 +3,13 @@
 # -------------------------
 
 # Proyecto 
-PROJECT_ID = "prueba1moi"
+PROJECT_ID = "final-espinal-aguilar"
 
 # Bucket principal
-BUCKET_MONITOREADO = "grupo6_scotiabank_bucket3"
+BUCKET_MONITOREADO = "grupo6_scotiabank_bucket6"
 
 # Prefijo donde se suben los archivos RAW por entidad
-ROOT_RAW = "data/raw/"
-
-
-# -------------------------
-# PREFIJOS SBS
-# -------------------------
-
-PREFIX_SBS = ROOT_RAW + "SBS/"
-PREFIX_RATIO_LIQUIDEZ = PREFIX_SBS + "RATIO_LIQUIDEZ/"
-
+ROOT_RAW = "raw/"
 
 # -----------------------
 # BIGQUERY DATASET/TABLE

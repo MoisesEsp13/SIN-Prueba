@@ -19,7 +19,7 @@ spark = SparkSession.builder.appName("BroncePlataOro").enableHiveSupport().getOr
 # -----------------------------
 # Parámetros BigQuery
 # -----------------------------
-project_id = "prueba1moi"
+project_id = "final-espinal-aguilar"
 dataset_plata = "plata"
 dataset_oro = "oro"
 table_plata = "sbs_liquidez"

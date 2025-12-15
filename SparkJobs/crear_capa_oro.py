@@ -7,7 +7,7 @@ from pyspark.sql.types import StructType, StructField, IntegerType, DoubleType, 
 # -------------------------------
 # CONFIGURACIÓN
 # -------------------------------
-PROJECT_ID = "prueba1moi"
+PROJECT_ID = "final-espinal-aguilar"
 DATASET = "oro"
 DATASET_REGION = "southamerica-west1"
 
